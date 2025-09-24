@@ -138,6 +138,12 @@ export const getWindowContent = (id: string) => {
 
 export const PROJECTS: Project[] = [
   {
+    title: 'PSA Website Clone',
+    description: 'A functional clone of the Philippine Statistics Authority (PSA) website, developed to replicate its key features and data presentation. This project showcases skills in frontend development and UI replication.',
+    imageUrl: 'https://picsum.photos/seed/project7/300/200',
+    link: 'https://ojtreqpsa.vercel.app/',
+  },
+  {
     title: 'Infobot: Smart Division Assistant',
     description: 'The official AI Chatbot for DepEd Tandag City Division. It provides updates on new memorandums, features advanced document search, and offers institutional insights through an intelligent chat interface.',
     imageUrl: 'https://picsum.photos/seed/project5/300/200',
@@ -148,29 +154,5 @@ export const PROJECTS: Project[] = [
     description: 'Master coding with AI-powered guidance and real-time feedback. Features separate interfaces for students (AI chat, learning materials, quizzes) and instructors (content creation, analytics).',
     imageUrl: 'https://picsum.photos/seed/project6/300/200',
     link: 'https://aissistant-pi.vercel.app/',
-  },
-  {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce website built with React, Node.js, and a PostgreSQL database. Implemented secure payments with Stripe.',
-    imageUrl: 'https://picsum.photos/seed/project1/300/200',
-    link: '#',
-  },
-  {
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing sales data using D3.js and React. Features include dynamic filtering and chart generation.',
-    imageUrl: 'https://picsum.photos/seed/project2/300/200',
-    link: '#',
-  },
-  {
-    title: 'Portfolio Website V1',
-    description: 'My previous personal portfolio website, built with vanilla HTML, CSS, and JavaScript. Focused on clean design and animations.',
-    imageUrl: 'https://picsum.photos/seed/project3/300/200',
-    link: '#',
-  },
-   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application using React and Firebase for real-time data synchronization and user authentication.',
-    imageUrl: 'https://picsum.photos/seed/project4/300/200',
-    link: '#',
   },
 ];

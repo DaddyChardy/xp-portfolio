@@ -5,7 +5,18 @@ const ResumeContent: React.FC = () => {
   return (
     <div className="p-8 text-sm font-sans text-gray-800">
       <h1 className="text-3xl font-bold mb-2 text-center text-blue-800">RICHARD T. CUBERO</h1>
-      <p className="text-center mb-6">Purok Saturn, Telaje, Tandag City | +63 995 323 6145 | richardcubero2021@gamil.com | www.realchardportfolio.vercel.app</p>
+      <p className="text-center mb-4">Purok Saturn, Telaje, Tandag City | +63 995 323 6145 | richardcubero2021@gamil.com | https://richard-cubero-portfolio-xp.vercel.app/</p>
+
+      <div className="text-center mb-6">
+        <a
+          href="https://drive.google.com/file/d/1L1KuCWo-ZHJHg0kT9SfJ7XbXtyVFZiRw/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-black px-5 py-1 text-sm bg-[#ECE9D8] border border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#7F7F7F] border-b-[#7F7F7F] hover:bg-[#E0E0E0] active:border-t-[#7F7F7F] active:border-l-[#7F7F7F] active:border-r-[#FFFFFF] active:border-b-[#FFFFFF]"
+        >
+          Download Resume (PDF)
+        </a>
+      </div>
 
       <div className="mb-6">
         <h2 className="text-xl font-bold border-b-2 border-blue-700 pb-1 mb-2">Summary</h2>
