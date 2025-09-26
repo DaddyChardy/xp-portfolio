@@ -4,6 +4,7 @@ import type { IconInfo, Project } from './types';
 import ResumeContent from './components/content/ResumeContent';
 import ProjectsContent from './components/content/ProjectsContent';
 import AboutMeContent from './components/content/AboutMeContent';
+import ChatbotContent from './components/content/ChatbotContent';
 
 // SVG Icons
 export const FolderIcon: React.FC<{className?: string}> = ({ className }) => (
@@ -39,6 +40,13 @@ export const RecycleBinIcon: React.FC<{ className?: string }> = ({ className }) 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className={className}><path fill="#90A4AE" d="M20,13h8v2h-8V13z M22,18h4v2h-4V18z"/><path fill="#CFD8DC" d="M30.5,10.6l-2.9-3.7C27.2,6.4,26.6,6,26,6h-4c-0.6,0-1.2,0.4-1.6,0.9l-2.9,3.7C16.9,11.5,16,12.7,16,14v1h16v-1C32,12.7,31.1,11.5,30.5,10.6z"/><path fill="#B0BEC5" d="M30,15H18c-2.2,0-4,1.8-4,4v15c0,2.2,1.8,4,4,4h12c2.2,0,4-1.8,4-4V19C34,16.8,32.2,15,30,15z"/><path fill="#455A64" d="M19,34c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1v-9h-2v8h-6v-8h-2V34z"/></svg>
 );
 
+export const ClippyIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className={className}>
+        <path fill="#B0BEC5" d="M110.4 220.8c-13.2 0-24-10.8-24-24v-120c0-2.2 1.8-4 4-4s4 1.8 4 4v120c0 8.8 7.2 16 16 16s16-7.2 16-16V40c0-13.2-10.8-24-24-24s-24 10.8-24 24v132c0 2.2-1.8 4-4 4s-4-1.8-4-4V40c0-17.6 14.4-32 32-32s32 14.4 32 32v124c0 13.2 10.8 24 24 24s24-10.8 24-24V72c0-2.2-1.8-4-4-4s-4 1.8-4 4v92c0 8.8-7.2 16-16 16s-16-7.2-16-16V36c0-15.4-12.6-28-28-28s-28 12.6-28 28v160.8c0 15.4 12.6 28 28 28s28-12.6 28-28v-3.2c0-2.2-1.8-4-4-4s-4 1.8-4 4v3.2c0 11-9 20-20 20z"/>
+        <path fill="#FFFFFF" d="M96 32a24 24 0 11-48 0 24 24 0 0148 0zM192 32a24 24 0 11-48 0 24 24 0 0148 0z"/>
+        <path fill="#000000" d="M80 32a8 8 0 11-16 0 8 8 0 0116 0zM176 32a8 8 0 11-16 0 8 8 0 0116 0z"/>
+    </svg>
+);
 
 export const LinkedInIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className={className}>
@@ -131,6 +139,12 @@ export const getWindowContent = (id: string) => {
                 <p className="mt-2">You can drag windows, resize them, and rearrange icons on the desktop.</p>
             </div>,
         };
+    case 'chatbot':
+        return {
+            title: 'Clippy - Your Assistant',
+            icon: <ClippyIcon className="w-4 h-4" />,
+            content: <ChatbotContent />,
+        };
     default:
       return null;
   }
@@ -140,19 +154,19 @@ export const PROJECTS: Project[] = [
   {
     title: 'PSA Website Clone',
     description: 'A functional clone of the Philippine Statistics Authority (PSA) website, developed to replicate its key features and data presentation. This project showcases skills in frontend development and UI replication.',
-    imageUrl: 'https://picsum.photos/seed/project7/300/200',
+    imageUrl: '/context/c.png',
     link: 'https://ojtreqpsa.vercel.app/',
   },
   {
     title: 'Infobot: Smart Division Assistant',
     description: 'The official AI Chatbot for DepEd Tandag City Division. It provides updates on new memorandums, features advanced document search, and offers institutional insights through an intelligent chat interface.',
-    imageUrl: 'https://picsum.photos/seed/project5/300/200',
+    imageUrl: '/context/c.png',
     link: 'https://infobot-web-mu.vercel.app/',
   },
   {
     title: 'AIssistant',
     description: 'Master coding with AI-powered guidance and real-time feedback. Features separate interfaces for students (AI chat, learning materials, quizzes) and instructors (content creation, analytics).',
-    imageUrl: 'https://picsum.photos/seed/project6/300/200',
+    imageUrl: '/context/c.png',
     link: 'https://aissistant-pi.vercel.app/',
   },
 ];

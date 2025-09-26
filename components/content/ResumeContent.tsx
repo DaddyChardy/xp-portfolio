@@ -5,7 +5,7 @@ const ResumeContent: React.FC = () => {
   return (
     <div className="p-8 text-sm font-sans text-gray-800">
       <h1 className="text-3xl font-bold mb-2 text-center text-blue-800">RICHARD T. CUBERO</h1>
-      <p className="text-center mb-4">Purok Saturn, Telaje, Tandag City | +63 995 323 6145 | richardcubero2021@gamil.com | https://richard-cubero-portfolio-xp.vercel.app/</p>
+      <p className="text-center mb-4">Purok Saturn, Telaje, Tandag City | +63 995 323 6145 | richardcubero2021@gmail.com | https://richard-cubero-portfolio-xp.vercel.app/</p>
 
       <div className="text-center mb-6">
         <a
